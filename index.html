@@ -26,13 +26,13 @@
   </head>
 
   <body class="w-full h-full text-lg bg-white text-dacy">
-    <main class="text-center text-lg font-Opensans relative">
+    <main class="text-center text-lg font-Opensans">
       <!-- TODO:SECTION 1 -->
       <!-- HEADER SECTION -->
       <header
         class="w-full bg-hero-mobile bg-pacy bg-no-repeat bg-cover bg-center bg-fixed py-8"
       >
-        <div class="flex justify-between items-center mx-3">
+        <div class="flex justify-start items-center mx-3">
           <div class="w-5/12 ml-2">
             <img
               src="./images/logo.svg"
@@ -58,7 +58,7 @@
             </p>
             <a
               href="#"
-              class="mt-12 mx-auto bg-primary hover:bg-primary/80 text-neutral-50 font-semibold px-12 py-3 rounded-full"
+              class="mt-12 mx-auto bg-primary hover:bg-primary/80 text-neutral-50 font-semibold px-12 py-3 shadow-md rounded-full"
               >Get Started For Free</a
             >
           </div>
@@ -126,28 +126,52 @@
       </section>
 
       <!-- CALL TO ACTION -->
-      <div class="absolute">
-        <h3>Ready To Build Your Community?</h3>
-        <a>Get Started For Free</a>
+      <div class="mx-auto relative w-4/5">
+        <div
+          class="absolute w-full top-20 left-1/2 -translate-x-1/2 bg-white max-w-md py-8 px-2 shadow-card rounded-2xl"
+        >
+          <h2 class="text-xl font-Poppins font-semibold mb-8">
+            Ready To Build Your Community?
+          </h2>
+          <a
+            href="#"
+            class="mx-auto bg-primary hover:bg-primary/80 text-neutral-50 font-semibold px-8 py-3 shadow-lg rounded-full"
+            >Get Started For Free</a
+          >
+        </div>
       </div>
 
       <!-- FOOTER SECTION -->
       <!-- TODO:SECTION 3 -->
-      <footer class="flex flex-col bg-dacy text-pacy mt-48 px-3">
-        <div class="mt-40">
-          <div><img src="./images/logo2.svg" alt="" /></div>
-          <span><img src="./images/icon-location.svg" alt="" /></span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-          <span><img src="./images/icon-phone.svg" alt="Phone icon" /></span>
-          <p>+1-543-123-4567</p>
-          <span><img src="./images/icon-email.svg" alt="Email icon" /></span>
-          <p>example@huddle.com</p>
+      <footer class="flex flex-col bg-dacy text-pacy mt-48 px-4">
+        <div class="mt-32 space-y-6">
+          <div class="w-3/5">
+            <img src="./images/logo2.svg" class="w-full" alt="Huddle Logo" />
+          </div>
+          <div class="flex h-3/5 justify-start items-start">
+            <div class="w-1/6 pt-1">
+              <img src="./images/icon-location.svg" alt="location icon" />
+            </div>
+            <p class="text-left w-5/6 -ml-2.5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="flex h-1/5 items-center">
+            <div class="w-1/6">
+              <img src="./images/icon-phone.svg" alt="Phone icon" />
+            </div>
+            <p class="text-left w-5/6 -ml-2.5">+1-543-123-4567</p>
+          </div>
+          <div class="flex h-1/5 items-center">
+            <div class="w-1/6">
+              <img src="./images/icon-email.svg" alt="Email icon" />
+            </div>
+            <p class="text-left w-5/6 -ml-2.5">example@huddle.com</p>
+          </div>
         </div>
         <nav>
-          <ul>
+          <ul class="mt-12 text-left space-y-4">
             <li><a href="#">About Us</a></li>
             <li><a href="#">What We Do</a></li>
             <li><a href="#">FAQ</a></li>
@@ -156,17 +180,25 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
-        <div class="social-media">
-          <a href="www.facebook.com" class=""
-            ><img src="./images/icon-facebook.svg" alt="Facebook" class= /></a
-          ><a href="www.twitter.com"
+        <div class="social-media flex justify-center mt-12 space-x-4">
+          <a
+            href="www.facebook.com"
+            class="block border-2 border-pacy rounded-full p-3"
+            ><img src="./images/icon-facebook.svg" alt="Facebook" /></a
+          ><a
+            href="www.twitter.com"
+            class="block border-2 border-pacy rounded-full p-3"
             ><img src="./images/icon-twitter.svg" alt="Twitter" /></a
-          ><a href="www.instagram.com"
+          ><a
+            href="www.instagram.com"
+            class="block border-2 border-pacy rounded-full p-3"
             ><img src="./images/icon-instagram.svg" alt="Instagram"
           /></a>
         </div>
-        <div>
-          <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+        <div class="">
+          <p class="text-sm mt-10 mb-12">
+            &copy; Copyright 2018 Huddle. All rights reserved.
+          </p>
         </div>
       </footer>
     </main>
