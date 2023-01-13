@@ -529,6 +529,14 @@ video {
   left: 50%;
 }
 
+.top-24 {
+  top: 6rem;
+}
+
+.top-32 {
+  top: 8rem;
+}
+
 .order-2 {
   order: 2;
 }
@@ -603,6 +611,18 @@ video {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mt-56 {
+  margin-top: 14rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .block {
