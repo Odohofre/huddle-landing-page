@@ -537,10 +537,6 @@ video {
   order: 1;
 }
 
-.order-3 {
-  order: 3;
-}
-
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -645,13 +641,21 @@ video {
   width: 83.333333%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.grow-0 {
+  flex-grow: 0;
 }
 
 .-translate-x-1\/2 {
@@ -880,6 +884,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-\[11px\] {
   font-size: 11px;
 }
@@ -971,12 +980,32 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:top-40 {
+    top: 10rem;
+  }
+
   .md\:order-1 {
     order: 1;
   }
 
   .md\:order-2 {
     order: 2;
+  }
+
+  .md\:order-3 {
+    order: 3;
+  }
+
+  .md\:order-5 {
+    order: 5;
+  }
+
+  .md\:order-4 {
+    order: 4;
+  }
+
+  .md\:order-6 {
+    order: 6;
   }
 
   .md\:m-auto {
@@ -1018,24 +1047,24 @@ video {
     margin-top: 1rem;
   }
 
-  .md\:ml-3 {
-    margin-left: 0.75rem;
-  }
-
   .md\:ml-4 {
     margin-left: 1rem;
   }
 
-  .md\:mr-4 {
-    margin-right: 1rem;
+  .md\:mb-16 {
+    margin-bottom: 4rem;
   }
 
-  .md\:mr-2 {
-    margin-right: 0.5rem;
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
-  .md\:mr-1 {
-    margin-right: 0.25rem;
+  .md\:mt-80 {
+    margin-top: 20rem;
+  }
+
+  .md\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .md\:flex {
@@ -1052,6 +1081,19 @@ video {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .md\:h-2\/5 {
+    height: 40%;
+  }
+
+  .md\:h-4 {
+    height: 1rem;
   }
 
   .md\:w-full {
@@ -1074,6 +1116,14 @@ video {
     width: 40%;
   }
 
+  .md\:w-1\/5 {
+    width: 20%;
+  }
+
+  .md\:w-4 {
+    width: 1rem;
+  }
+
   .md\:max-w-xl {
     max-width: 36rem;
   }
@@ -1082,16 +1132,48 @@ video {
     max-width: 100%;
   }
 
+  .md\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .md\:items-center {
     align-items: center;
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-56 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(14rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(14rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:border {
+    border-width: 1px;
   }
 
   .md\:bg-hero-desktop {
@@ -1110,12 +1192,8 @@ video {
     padding: 1.5rem;
   }
 
-  .md\:p-8 {
-    padding: 2rem;
-  }
-
-  .md\:p-10 {
-    padding: 2.5rem;
+  .md\:p-2 {
+    padding: 0.5rem;
   }
 
   .md\:px-20 {
@@ -1138,26 +1216,6 @@ video {
     padding-right: 6rem;
   }
 
-  .md\:px-28 {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .md\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .md\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -1168,12 +1226,48 @@ video {
     padding-bottom: 2rem;
   }
 
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .md\:px-\[120px\] {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .md\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:pr-20 {
     padding-right: 5rem;
   }
 
   .md\:pr-8 {
     padding-right: 2rem;
+  }
+
+  .md\:pt-48 {
+    padding-top: 12rem;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .md\:pt-2 {
+    padding-top: 0.5rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .md\:text-left {
@@ -1202,6 +1296,10 @@ video {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[34px\] {
+    font-size: 34px;
   }
 
   .md\:font-bold {
